@@ -1,0 +1,82 @@
+<head>
+    <link href="hogwarts-style.css" type="text/css" rel="stylesheet">
+</head>
+<div class="allform">
+    <h1 id="title">Hogwarts application form</h1>
+    <p id="description">Let us know more about you before you arrive!</p>
+  
+  <main>
+    <form id="survey-form" method="GET">
+      <div class="labels">
+        <label for="name" id="name-label">*Name:</label>
+      </div>
+      <div class="rightTab">
+        <input type="text" id="name" name="name1" class="input-field" placeholder="Your name" required>
+      </div>
+      
+      <div class="labels">
+        <label for="email" id="email-label">*Email:</label>
+      </div>
+      <div class="rightTab">
+        <input type="email" id="email" name="email1" class="input-field" placeholder="Your email" required>
+      </div>
+      
+      <div class="labels">
+        <label for="number" id="number-label">*Age:</label>
+      </div>
+      <div class="rightTab">
+        <input type="number" id="number" name="number1" class="input-field" placeholder="11" min="10" max="50" step="1">
+      </div>
+      
+      <div class="labels">
+        <label for="dropdown">*Which House would you like to join?</label>
+      </div>
+      <div class="rightTab">
+      <select id="dropdown" class="dropdown">
+        <option value="no">Choose a House</option>
+        <option value="gryff">Gryffindor</option>
+        <option value="raven">Ravenclaw</option>
+        <option value="huff">Hufflepuff</option>
+        <option value="sly">Slytherin</option>
+      </select>
+      </div>
+      
+      <fieldset>
+        <legend>Choose your magic background:</legend>
+  
+        <label for="magic"><input type="radio" name="family" id="magic" value="magic">Wizard parents</label>
+        
+        <label for="half"><input type="radio" name="family" id="half" value="half">Half-wizard parents</label>
+        
+        <label for="muggle1"><input type="radio" name="family" id="muggle1" value="muggle1">Muggle parents supporting your wizard skills</label>
+        
+      <label for="muggle2"><input type="radio" name="family" id="muggle2" value="muggle2">Muggle parents fighting your wizard skills</label>
+        
+      </fieldset>
+      
+      <fieldset>
+        <legend>Do you want to take any pets with you?</legend>
+        <ul>
+          <li><label for="owl"><input type="checkbox" id="owl" name="pets" value="1">Owl</label></li>
+        
+        <li><label for="cat"><input type="checkbox" id="cat" name="pets" value="2">Cat</label></li>
+        
+        <li><label for="toad"><input type="checkbox" id="toad" name="pets" value="3">Toad</label></li>
+        
+        <li><label for="rat"><input type="checkbox" id="rat" name="pets" value="4">Rat</label></li>
+        </ul>
+      </fieldset>
+      
+      <div class="labels" id="pop">
+        <label for="comment">Any questions<br> or comments?</label>
+      </div>
+      <div class="rightTab">
+      <textarea id="comment" class="input-field" style="height:50px;resize:vertical;" name="comments" placeholder="Type them here!"></textarea>
+      </div>
+    
+      <button type="submit" id="submit">Send your owl</button>
+      
+   </div>
+    
+    </form>
+  </main>

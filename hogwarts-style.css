@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Berkshire+Swash|Cinzel|Cinzel+Decorative|Julius+Sans+One|Kaushan+Script|Rancho|Sigmar+One&display=swap');
+
+body {
+  background-image: url(https://i.pinimg.com/originals/39/34/3b/39343b7a4290eda851006639be23673e.jpg);
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 10px;
+}
+
+.allform {
+  background-color: #f6f4ff;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 2em;
+  color: #133a63;
+  padding: 30px 10px 10px 10px;
+  margin: 10px;
+}
+
+p {
+  font-size: 1.5em;
+  margin: 0 10px 20px 10px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: bottom;
+}
+
+.input-field {
+  height: 20px;
+  width: 70%;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+fieldset {
+  display: flex;
+  margin: 2% 10%;
+  padding: 2% 10%;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  float: left;
+  width: 40%;
+}
+
+li:nth-child(even) {
+  float: right;
+}
+
+legend {
+  text-align: center;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+  margin: 10px;
+}
+
+button {
+  background-color: #2e5782;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.6em;
+  height: 40px;
+  margin: 20px;
+  border: 0px solid;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b24d00;
+}
+
+@media screen and (max-width: 520px) {
+
+  h1, p {
+    font-size: 1em;
+  }
+  .labels {
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .rightTab {
+    width: 100%;
+  }
+  .input-field {
+    width: 80%;
+    margin-left: 10px;
+  }
+  select {
+    width: 100%;
+  }
+  #pop {
+    text-align: center;
+  }
+}
